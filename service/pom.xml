@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>service_hospital</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -37,6 +41,12 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!--代码自动生成器依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.5.3</version>
+        </dependency>
         <!--开发者工具-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -49,14 +59,14 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <!-- 服务注册 -->
-        <dependency>
+<!--        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <!-- 流量控制 -->
+        &lt;!&ndash; 流量控制 &ndash;&gt;
         <dependency>
-             <groupId>com.alibaba.cloud</groupId>
-             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-        </dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>-->
     </dependencies>
 </project>
